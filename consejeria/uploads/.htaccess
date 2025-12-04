@@ -1,0 +1,15 @@
+# Denegar acceso directo a archivos por seguridad
+Options -Indexes
+<Files "*.php">
+    Order allow,deny
+    Deny from all
+</Files>
+
+# Permitir solo ciertos tipos de archivo
+<FilesMatch "\.(jpg|jpeg|png|pdf|doc|docx|txt)$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+# Limitar tamaño de archivo (5MB)
+LimitRequestBody 5242880

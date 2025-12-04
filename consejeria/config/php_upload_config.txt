@@ -1,0 +1,24 @@
+# Configuraciones recomendadas para PHP.ini para subida de archivos
+
+# Permitir subida de archivos
+file_uploads = On
+
+# Tamaño máximo de archivo (5MB)
+upload_max_filesize = 5M
+
+# Tamaño máximo de datos POST (debe ser mayor que upload_max_filesize)
+post_max_size = 8M
+
+# Tiempo máximo de ejecución (30 segundos)
+max_execution_time = 30
+
+# Memoria máxima (128MB)
+memory_limit = 128M
+
+# Número máximo de archivos que se pueden subir simultáneamente
+max_file_uploads = 20
+
+# Directorio temporal para archivos subidos (dejar en blanco para usar el del sistema)
+upload_tmp_dir = 
+
+# IMPORTANTE: Reiniciar Apache después de modificar PHP.ini
